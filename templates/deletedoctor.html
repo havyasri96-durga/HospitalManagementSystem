@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Delete Doctor</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>🗑 Delete Doctor</h1>
+
+<div class="form-container">
+
+<form action="/deletedoctorrecord" method="POST">
+
+Doctor ID
+
+<input type="number"
+name="doctor_id"
+required>
+
+<input type="submit"
+value="Delete Doctor">
+
+</form>
+
+</div>
+
+</body>
+</html>

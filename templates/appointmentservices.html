@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Appointment Services</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>📅 Appointment Services</h1>
+
+<div class="dashboard">
+
+    <a href="/bookappointment" class="card-link">
+
+        <div class="card-box appointment-card">
+
+            <h2>➕ Book Appointment</h2>
+
+            <p>Create New Appointment</p>
+
+        </div>
+
+    </a>
+
+    <a href="/appointments" class="card-link">
+
+        <div class="card-box patient-card">
+
+            <h2>📋 View Appointments</h2>
+
+            <p>Display All Appointments</p>
+
+        </div>
+
+    </a>
+
+    <a href="/updateappointment" class="card-link">
+
+        <div class="card-box medicine-card">
+
+            <h2>✏ Update Status</h2>
+
+            <p>Update Appointment Status</p>
+
+        </div>
+
+    </a>
+
+</div>
+
+</body>
+</html>

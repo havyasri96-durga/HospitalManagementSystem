@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Add Patient</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>Add Patient</h1>
+
+<div class="form-container">
+
+<form action="/savepatient" method="POST">
+
+<label>Patient name</label>
+
+<input type="text"
+name="patient_name"
+required>
+
+<label>Age</label>
+
+<input type="number"
+name="age"
+required>
+
+<label>Gender</label>
+
+<select name="gender" required>
+
+    <option value="">Select Gender</option>
+
+    <option value="Male">Male</option>
+
+    <option value="Female">Female</option>
+
+    <option value="Other">Other</option>
+
+</select>
+
+<label>Phone</label>
+
+<input type="text"
+name="phone"
+maxlength="10"
+pattern="[0-9]{10}"
+oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+required>
+
+<label>Disease</label>
+
+<input type="text"
+name="disease"
+required>
+
+<input type="submit"
+value="Save Patient">
+
+</form>
+
+</div>
+
+</body>
+</html>

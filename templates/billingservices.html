@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Billing Management</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>💳 Billing Management</h1>
+
+<div class="dashboard">
+
+    <a href="/addbill" class="card-link">
+
+        <div class="card-box billing-card">
+
+            <h2>➕ Generate Bill</h2>
+
+            <p>Create Patient Bill</p>
+
+        </div>
+
+    </a>
+
+    <a href="/bills" class="card-link">
+
+        <div class="card-box patient-card">
+
+            <h2>📋 View Bills</h2>
+
+            <p>Display All Bills</p>
+
+        </div>
+
+    </a>
+
+    <a href="/updatebill" class="card-link">
+
+        <div class="card-box medicine-card">
+
+            <h2>✏ Update Payment</h2>
+
+            <p>Track Payment Status</p>
+
+        </div>
+
+    </a>
+
+</div>
+
+</body>
+</html>

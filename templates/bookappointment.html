@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Book Appointment</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>📅 Book Appointment</h1>
+
+<div class="form-container">
+
+<form action="/saveappointment" method="POST">
+
+Patient Name
+
+<input type="text"
+name="patient_name"
+required>
+
+Doctor Name
+
+<input type="text"
+name="doctor_name"
+required>
+
+Appointment Date
+
+<input type="date"
+name="appointment_date"
+required>
+
+<input type="submit"
+value="Book Appointment">
+
+</form>
+
+</div>
+
+</body>
+</html>

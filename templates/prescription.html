@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Prescription</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>Create Prescription</h1>
+
+<div class="form-container">
+
+<form>
+
+<label>Disease</label>
+
+<select id="disease"
+onchange="showMedicines()">
+
+    <option value="">
+    Select Disease
+    </option>
+
+    <option value="Fever">
+    Fever
+    </option>
+
+    <option value="Cold">
+    Cold
+    </option>
+
+    <option value="Diabetes">
+    Diabetes
+    </option>
+
+    <option value="Headache">
+    Headache
+    </option>
+
+    <option value="Cough">
+    Cough
+    </option>
+
+</select>
+
+<label>Medicine</label>
+
+<select id="medicine">
+
+    <option>
+    Select Medicine
+    </option>
+
+</select>
+
+</form>
+
+</div>
+
+<script>
+
+function showMedicines(){
+
+    let disease =
+    document.getElementById("disease").value;
+
+    let medicine =
+    document.getElementById("medicine");
+
+    medicine.innerHTML="";
+
+    if(disease=="Fever"){
+
+        medicine.innerHTML +=
+        "<option>Paracetamol</option>";
+
+        medicine.innerHTML +=
+        "<option>Dolo 650</option>";
+
+        medicine.innerHTML +=
+        "<option>Crocin</option>";
+    }
+
+    if(disease=="Cold"){
+
+        medicine.innerHTML +=
+        "<option>Cetirizine</option>";
+
+        medicine.innerHTML +=
+        "<option>Sinarest</option>";
+
+        medicine.innerHTML +=
+        "<option>Levocetirizine</option>";
+    }
+
+    if(disease=="Diabetes"){
+
+        medicine.innerHTML +=
+        "<option>Metformin</option>";
+
+        medicine.innerHTML +=
+        "<option>Insulin</option>";
+    }
+
+    if(disease=="Headache"){
+
+        medicine.innerHTML +=
+        "<option>Saridon</option>";
+
+        medicine.innerHTML +=
+        "<option>Paracetamol</option>";
+    }
+
+    if(disease=="Cough"){
+
+        medicine.innerHTML +=
+        "<option>Benadryl</option>";
+
+        medicine.innerHTML +=
+        "<option>Ascoril</option>";
+    }
+
+}
+
+</script>
+
+</body>
+</html>

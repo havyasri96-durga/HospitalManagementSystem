@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Doctor Details</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>Doctor Details</h1>
+
+<div class="form-container">
+
+<p><b>ID:</b> {{ doctor[0] }}</p>
+
+<p><b>Name:</b> {{ doctor[1] }}</p>
+
+<p><b>Specialization:</b> {{ doctor[2] }}</p>
+
+<p><b>Phone:</b> {{ doctor[3] }}</p>
+
+<p><b>Experience:</b> {{ doctor[4] }}</p>
+
+</div>
+
+</body>
+</html>

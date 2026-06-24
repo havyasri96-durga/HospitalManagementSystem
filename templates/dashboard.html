@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Logout</a>
+
+    </div>
+
+</div>
+
+<div class="welcome">
+
+    <h1>Admin Dashboard</h1>
+
+    <h3>Healthcare Management Portal</h3>
+
+    <p>Welcome Administrator</p>
+
+</div>
+
+<div class="dashboard">
+
+<a href="/patientservices" class="card-link">
+
+<div class="card-box patient-card">
+
+<h2>🧑 Patient Services</h2>
+
+<p>
+Add Patient<br>
+View Patients<br>
+Search Patient<br>
+Update Patient<br>
+Delete Patient
+</p>
+
+</div>
+
+</a>
+
+<a href="/doctorservices" class="card-link">
+
+<div class="card-box doctor-card">
+
+<h2>👨‍⚕️ Doctor Services</h2>
+
+<p>
+Add Doctor<br>
+View Doctors<br>
+Search Doctor<br>
+Update Doctor<br>
+Delete Doctor
+</p>
+
+</div>
+
+</a>
+
+<a href="/appointmentservices" class="card-link">
+
+<div class="card-box appointment-card">
+
+<h2>📅 Appointment Services</h2>
+
+<p>
+Book Appointment<br>
+View Appointments<br>
+Update Status
+</p>
+
+</div>
+
+</a>
+
+<a href="/medicineservices" class="card-link">
+
+<div class="card-box medicine-card">
+
+<h2>💊 Medicine Management</h2>
+
+<p>
+Add Medicine<br>
+View Medicines<br>
+Search Medicine<br>
+Update Medicine<br>
+Delete Medicine
+</p>
+
+</div>
+
+</a>
+
+<a href="/billingservices" class="card-link">
+
+<div class="card-box billing-card">
+
+<h2>💳 Billing Management</h2>
+
+<p>
+Generate Bill<br>
+View Bills<br>
+Update Payment Status
+</p>
+
+</div>
+
+</a>
+
+<a href="/reportservices" class="card-link">
+
+<div class="card-box report-card">
+
+<h2>📋 Medical Reports</h2>
+
+<p>
+Add Report<br>
+View Reports<br>
+Search Report
+</p>
+
+</div>
+
+</a>
+
+<a href="/feedbackservices" class="card-link">
+
+<div class="card-box feedback-card">
+
+<h2>⭐ Feedback Management</h2>
+
+<p>
+Add Feedback<br>
+View Feedbacks
+</p>
+
+</div>
+
+</a>
+
+<a href="/statistics" class="card-link">
+
+<div class="card-box statistics-card">
+
+<h2>📊 Statistics Dashboard</h2>
+
+<p>
+Total Patients<br>
+Total Doctors<br>
+Total Appointments<br>
+Total Medicines<br>
+Total Bills<br>
+Total Revenue
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+</body>
+</html>

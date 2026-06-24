@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Update Appointment</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>✏ Update Appointment Status</h1>
+
+<div class="form-container">
+
+<form action="/updateappointmentrecord" method="POST">
+
+Appointment ID
+
+<input type="number"
+name="appointment_id"
+required>
+
+Status
+
+<input type="text"
+name="status"
+placeholder="Approved / Completed / Cancelled"
+required>
+
+<input type="submit"
+value="Update Status">
+
+</form>
+
+</div>
+
+</body>
+</html>

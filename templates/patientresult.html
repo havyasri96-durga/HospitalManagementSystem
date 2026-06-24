@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Patient Result</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>Patient Details</h1>
+
+<div class="form-container">
+
+<p><b>ID:</b> {{ patient[0] }}</p>
+
+<p><b>Name:</b> {{ patient[1] }}</p>
+
+<p><b>Age:</b> {{ patient[2] }}</p>
+
+<p><b>Gender:</b> {{ patient[3] }}</p>
+
+<p><b>Phone:</b> {{ patient[4] }}</p>
+
+<p><b>Disease:</b> {{ patient[5] }}</p>
+
+</div>
+
+</body>
+</html>

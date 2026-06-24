@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Medical Reports</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>📋 Medical Reports</h1>
+
+<div class="dashboard">
+
+    <a href="/addreport" class="card-link">
+
+        <div class="card-box report-card">
+
+            <h2>➕ Add Report</h2>
+
+            <p>Create Medical Report</p>
+
+        </div>
+
+    </a>
+
+    <a href="/reports" class="card-link">
+
+        <div class="card-box patient-card">
+
+            <h2>📋 View Reports</h2>
+
+            <p>Display All Reports</p>
+
+        </div>
+
+    </a>
+
+    <a href="/searchreport" class="card-link">
+
+        <div class="card-box appointment-card">
+
+            <h2>🔍 Search Report</h2>
+
+            <p>Find Report Details</p>
+
+        </div>
+
+    </a>
+
+    <a href="/prescription" class="card-link">
+
+        <div class="card-box report-card">
+
+            <h2>💊 Prescription</h2>
+
+            <p>Create Prescription</p>
+
+        </div>
+
+    </a>
+
+</div>
+
+</body>
+</html>

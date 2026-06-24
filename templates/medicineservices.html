@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Medicine Management</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>💊 Medicine Management</h1>
+
+<div class="dashboard">
+
+    <a href="/addmedicine" class="card-link">
+
+        <div class="card-box medicine-card">
+
+            <h2>➕ Add Medicine</h2>
+
+            <p>Add New Medicine</p>
+
+        </div>
+
+    </a>
+
+    <a href="/medicines" class="card-link">
+
+        <div class="card-box patient-card">
+
+            <h2>📋 View Medicines</h2>
+
+            <p>Display All Medicines</p>
+
+        </div>
+
+    </a>
+
+    <a href="/searchmedicine" class="card-link">
+
+        <div class="card-box appointment-card">
+
+            <h2>🔍 Search Medicine</h2>
+
+            <p>Find Medicine Details</p>
+
+        </div>
+
+    </a>
+
+    <a href="/updatemedicine" class="card-link">
+
+        <div class="card-box doctor-card">
+
+            <h2>✏ Update Medicine</h2>
+
+            <p>Edit Medicine Information</p>
+
+        </div>
+
+    </a>
+
+    <a href="/deletemedicine" class="card-link">
+
+        <div class="card-box report-card">
+
+            <h2>🗑 Delete Medicine</h2>
+
+            <p>Remove Medicine Record</p>
+
+        </div>
+
+    </a>
+
+</div>
+
+</body>
+</html>

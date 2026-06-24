@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Statistics Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>📊 Statistics Dashboard</h1>
+
+<div class="dashboard">
+
+    <div class="card-box patient-card">
+        <h2>Total Patients</h2>
+        <p>{{ total_patients }}</p>
+    </div>
+
+    <div class="card-box doctor-card">
+        <h2>Total Doctors</h2>
+        <p>{{ total_doctors }}</p>
+    </div>
+
+    <div class="card-box appointment-card">
+        <h2>Total Appointments</h2>
+        <p>{{ total_appointments }}</p>
+    </div>
+
+    <div class="card-box medicine-card">
+        <h2>Total Medicines</h2>
+        <p>{{ total_medicines }}</p>
+    </div>
+
+    <div class="card-box billing-card">
+        <h2>Total Bills</h2>
+        <p>{{ total_bills }}</p>
+    </div>
+
+    <div class="card-box statistics-card">
+        <h2>Total Revenue</h2>
+        <p>₹ {{ revenue }}</p>
+    </div>
+
+</div>
+
+</body>
+</html>

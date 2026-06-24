@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Add Doctor</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>➕ Add Doctor</h1>
+
+<div class="form-container">
+
+<form action="/savedoctor" method="POST">
+
+Doctor Name
+
+<input type="text"
+name="doctor_name"
+required>
+
+Specialization
+
+<input type="text"
+name="specialization"
+required>
+
+Phone
+
+<input type="text"
+name="phone"
+maxlength="10"
+pattern="[0-9]{10}"
+oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+required>
+
+Experience
+
+<input type="number"
+name="experience"
+required>
+
+<input type="submit"
+value="Save Doctor">
+
+</form>
+
+</div>
+
+</body>
+</html>

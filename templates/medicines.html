@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Medicines</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>💊 All Medicines</h1>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+<th>Medicine Name</th>
+<th>Price</th>
+<th>Quantity</th>
+
+</tr>
+
+{% for medicine in medicines %}
+
+<tr>
+
+<td>{{ medicine[0] }}</td>
+<td>{{ medicine[1] }}</td>
+<td>{{ medicine[2] }}</td>
+<td>{{ medicine[3] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>

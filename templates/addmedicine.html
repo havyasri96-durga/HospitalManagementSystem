@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Add Medicine</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>➕ Add Medicine</h1>
+
+<div class="form-container">
+
+<form action="/savemedicine" method="POST">
+
+<label>Category</label>
+
+<select name="category">
+
+    <option>Tablet</option>
+
+    <option>Syrup</option>
+
+    <option>Injection</option>
+
+    <option>Capsule</option>
+
+</select>
+
+<label>Medicine Name</label>
+
+<select name="medicine_name" required>
+
+    <option value="">
+        Select Medicine
+    </option>
+
+    <option value="Paracetamol">
+        Paracetamol
+    </option>
+
+    <option value="Dolo 650">
+        Dolo 650
+    </option>
+
+    <option value="Crocin">
+        Crocin
+    </option>
+
+    <option value="Cetirizine">
+        Cetirizine
+    </option>
+
+    <option value="Sinarest">
+        Sinarest
+    </option>
+
+    <option value="Metformin">
+        Metformin
+    </option>
+
+    <option value="Insulin">
+        Insulin
+    </option>
+
+    <option value="Saridon">
+        Saridon
+    </option>
+
+    <option value="Benadryl">
+        Benadryl
+    </option>
+
+    <option value="Ascoril">
+        Ascoril
+    </option>
+
+</select>
+
+<label>Price</label>
+
+<input type="number"
+name="price"
+required>
+
+<label>Quantity</label>
+
+<input type="number"
+name="quantity"
+required>
+
+<input type="submit"
+value="Save Medicine">
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Report Details</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>📋 Report Details</h1>
+
+<div class="card">
+
+<p><b>ID:</b> {{ report[0] }}</p>
+
+<p><b>Patient Name:</b> {{ report[1] }}</p>
+
+<p><b>Diagnosis:</b> {{ report[2] }}</p>
+
+<p><b>Prescription:</b> {{ report[3] }}</p>
+
+<p><b>Report Date:</b> {{ report[4] }}</p>
+
+</div>
+
+</body>
+</html>

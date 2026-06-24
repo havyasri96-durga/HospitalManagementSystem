@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Search Medicine</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>🔍 Search Medicine</h1>
+
+<div class="form-container">
+
+<form action="/findmedicine" method="POST">
+
+Medicine ID
+
+<input type="number"
+name="medicine_id"
+required>
+
+<input type="submit"
+value="Search">
+
+</form>
+
+</div>
+
+</body>
+</html>

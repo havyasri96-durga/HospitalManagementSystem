@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Generate Bill</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>💰 Generate Bill</h1>
+
+<div class="form-container">
+
+<form action="/savebill" method="POST">
+
+Patient Name
+
+<input type="text"
+name="patient_name"
+required>
+
+Amount
+
+<input type="number"
+name="amount"
+required>
+
+<input type="submit"
+value="Generate Bill">
+
+</form>
+
+</div>
+
+</body>
+</html>

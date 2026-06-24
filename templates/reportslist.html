@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>All Reports</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>📄 Medical Reports</h1>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+<th>Patient Name</th>
+<th>Diagnosis</th>
+<th>Prescription</th>
+<th>Report Date</th>
+
+</tr>
+
+{% for report in reports %}
+
+<tr>
+
+<td>{{ report[0] }}</td>
+<td>{{ report[1] }}</td>
+<td>{{ report[2] }}</td>
+<td>{{ report[3] }}</td>
+<td>{{ report[4] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>

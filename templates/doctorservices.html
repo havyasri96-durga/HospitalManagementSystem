@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Doctor Services</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        🏥 SmartCare Hospital ERP System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</div>
+
+<h1>👨‍⚕️ Doctor Services</h1>
+
+<div class="dashboard">
+
+    <a href="/adddoctor" class="card-link">
+
+        <div class="card-box doctor-card">
+
+            <h2>➕ Add Doctor</h2>
+
+            <p>Register New Doctor</p>
+
+        </div>
+
+    </a>
+
+    <a href="/doctors" class="card-link">
+
+        <div class="card-box patient-card">
+
+            <h2>📋 View Doctors</h2>
+
+            <p>Display All Doctors</p>
+
+        </div>
+
+    </a>
+
+    <a href="/searchdoctor" class="card-link">
+
+        <div class="card-box appointment-card">
+
+            <h2>🔍 Search Doctor</h2>
+
+            <p>Find Doctor Details</p>
+
+        </div>
+
+    </a>
+
+    <a href="/updatedoctor" class="card-link">
+
+        <div class="card-box medicine-card">
+
+            <h2>✏ Update Doctor</h2>
+
+            <p>Edit Doctor Information</p>
+
+        </div>
+
+    </a>
+
+    <a href="/deletedoctor" class="card-link">
+
+        <div class="card-box report-card">
+
+            <h2>🗑 Delete Doctor</h2>
+
+            <p>Remove Doctor Record</p>
+
+        </div>
+
+    </a>
+
+</div>
+
+</body>
+</html>

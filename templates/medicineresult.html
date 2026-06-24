@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Medicine Result</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>Medicine Details</h1>
+
+<div class="card">
+
+<p><b>ID:</b> {{ medicine[0] }}</p>
+<p><b>Name:</b> {{ medicine[1] }}</p>
+<p><b>Price:</b> {{ medicine[2] }}</p>
+<p><b>Quantity:</b> {{ medicine[3] }}</p>
+
+</div>
+
+</body>
+</html>

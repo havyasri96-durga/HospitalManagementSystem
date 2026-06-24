@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Search Patient</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>🔍 Search Patient</h1>
+
+<div class="form-container">
+
+<form action="/findpatientrecord" method="POST">
+
+Patient ID
+
+<input type="number"
+name="patient_id"
+required>
+
+<input type="submit"
+value="Search Patient">
+
+</form>
+
+</div>
+
+</body>
+</html>
