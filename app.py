@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, flash
 import mysql.connector
 
 print("App Started")
@@ -19,8 +19,11 @@ def home():
 
 
 # ---------------- LOGIN (FIXED) ----------------
-@app.route("/login", methods=["POST"])
+@app.route("/login", methods=["GET","POST"])
 def login():
+
+    if request.method == "GET":
+        return render_template("login.html")
 
     username = request.form["username"]
     password = request.form["password"]
@@ -48,14 +51,15 @@ def login():
 
         elif role == "Doctor":
             return redirect("/doctordashboard")
-
+        
         elif role == "Receptionist":
             return redirect("/receptiondashboard")
-
         else:
-            return "Role Not Found"
+            flash("Role not found", "error")
+            return redirect("/login")
 
-    return "Invalid Login"
+    flash("Invalid Credentials", "error")
+    return redirect("/login")
 
 
 # ---------------- DASHBOARDS ----------------
@@ -806,6 +810,8 @@ def printprescription(id):
         "printprescription.html",
         prescription=prescription
     )
+
+app.secret_key = "your_secret_key_here"
 
 # ---------------- RUN APP ----------------
 if __name__ == "__main__":
