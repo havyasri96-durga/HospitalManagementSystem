@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Prescription</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    margin:40px;
+}
+
+.prescription{
+    border:2px solid black;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+}
+
+.signature{
+    margin-top:80px;
+    text-align:right;
+}
+
+button{
+    padding:10px 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="prescription">
+
+<h1>🏥 SmartCare Hospital</h1>
+
+<hr>
+
+<p><b>Patient Name:</b> {{ patient_name }}</p>
+
+<p><b>Doctor Name:</b> {{ doctor_name }}</p>
+
+<p><b>Disease:</b> {{ diagnosis }}</p>
+
+<p><b>Medicine:</b> {{ medicines }}</p>
+
+<p><b>Date:</b> {{ prescription_date }}</p>
+
+<div class="signature">
+
+____________________
+
+<br>
+
+Doctor Signature
+
+</div>
+
+</div>
+
+<br>
+
+<center>
+
+<button onclick="window.print()">
+
+🖨 Print Prescription
+
+</button>
+
+</center>
+
+</body>
+</html>

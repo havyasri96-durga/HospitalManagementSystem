@@ -1,95 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% extends "layout.html" %}
 
-<title>Doctor Services</title>
+{% block title %}
+Doctor Services
+{% endblock %}
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='style.css') }}">
+{% block content %}
 
-</head>
+<div class="page-title">
 
-<body>
+<h1>🩺 Doctor Management</h1>
 
-<div class="navbar">
-
-    <div class="logo">
-        🏥 SmartCare Hospital ERP System
-    </div>
-
-    <div class="nav-links">
-
-        <a href="/dashboard">Dashboard</a>
-
-    </div>
+<p>Manage Doctor Records</p>
 
 </div>
 
-<h1>👨‍⚕️ Doctor Services</h1>
+<div class="grid">
 
-<div class="dashboard">
+<div class="card">
+<h3>Add Doctor</h3>
+<a href="/adddoctor">Open</a>
+</div>
 
-    <a href="/adddoctor" class="card-link">
+<div class="card">
+<h3>View Doctors</h3>
+<a href="/doctors">Open</a>
+</div>
 
-        <div class="card-box doctor-card">
+<div class="card">
+<h3>Search Doctor</h3>
+<a href="/searchdoctor">Open</a>
+</div>
 
-            <h2>➕ Add Doctor</h2>
+<div class="card">
+<h3>Update Doctor</h3>
+<a href="/updatedoctor">Open</a>
+</div>
 
-            <p>Register New Doctor</p>
-
-        </div>
-
-    </a>
-
-    <a href="/doctors" class="card-link">
-
-        <div class="card-box patient-card">
-
-            <h2>📋 View Doctors</h2>
-
-            <p>Display All Doctors</p>
-
-        </div>
-
-    </a>
-
-    <a href="/searchdoctor" class="card-link">
-
-        <div class="card-box appointment-card">
-
-            <h2>🔍 Search Doctor</h2>
-
-            <p>Find Doctor Details</p>
-
-        </div>
-
-    </a>
-
-    <a href="/updatedoctor" class="card-link">
-
-        <div class="card-box medicine-card">
-
-            <h2>✏ Update Doctor</h2>
-
-            <p>Edit Doctor Information</p>
-
-        </div>
-
-    </a>
-
-    <a href="/deletedoctor" class="card-link">
-
-        <div class="card-box report-card">
-
-            <h2>🗑 Delete Doctor</h2>
-
-            <p>Remove Doctor Record</p>
-
-        </div>
-
-    </a>
+<div class="card">
+<h3>Delete Doctor</h3>
+<a href="/deletedoctor">Open</a>
+</div>
 
 </div>
 
-</body>
-</html>
+{% endblock %}

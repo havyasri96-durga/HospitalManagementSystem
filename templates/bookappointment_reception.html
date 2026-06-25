@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Generate Bill</title>
+<title>Book Appointment</title>
 
 <link rel="stylesheet"
 href="{{ url_for('static', filename='style.css') }}">
@@ -18,16 +18,16 @@ href="{{ url_for('static', filename='style.css') }}">
     </div>
 
     <div class="nav-links">
-        <a href="/admindashboard">Dashboard</a>
+        <a href="/receptiondashboard">Dashboard</a>
     </div>
 
 </div>
 
-<h1>💰 Generate Bill</h1>
+<h1>📅 Book Appointment</h1>
 
 <div class="form-container">
 
-<form action="/savebill" method="POST">
+<form action="/saveappointment" method="POST">
 
 Patient Name
 
@@ -35,14 +35,20 @@ Patient Name
 name="patient_name"
 required>
 
-Amount
+Doctor Name
 
-<input type="number"
-name="amount"
+<input type="text"
+name="doctor_name"
+required>
+
+Appointment Date
+
+<input type="date"
+name="appointment_date"
 required>
 
 <input type="submit"
-value="Generate Bill">
+value="Book Appointment">
 
 </form>
 

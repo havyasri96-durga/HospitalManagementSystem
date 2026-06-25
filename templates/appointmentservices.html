@@ -1,71 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% extends "layout.html" %}
 
-<title>Appointment Services</title>
+{% block content %}
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='style.css') }}">
+<div class="page-title">
 
-</head>
+<h1>📅 Appointment Management</h1>
 
-<body>
-
-<div class="navbar">
-
-    <div class="logo">
-        🏥 SmartCare Hospital ERP System
-    </div>
-
-    <div class="nav-links">
-
-        <a href="/dashboard">Dashboard</a>
-
-    </div>
+<p>Manage Appointments</p>
 
 </div>
 
-<h1>📅 Appointment Services</h1>
+<div class="grid">
 
-<div class="dashboard">
+<div class="card">
+<h3>Book Appointment</h3>
+<a href="/bookappointment">Open</a>
+</div>
 
-    <a href="/bookappointment" class="card-link">
+<div class="card">
+<h3>View Appointments</h3>
+<a href="/appointments">Open</a>
+</div>
 
-        <div class="card-box appointment-card">
-
-            <h2>➕ Book Appointment</h2>
-
-            <p>Create New Appointment</p>
-
-        </div>
-
-    </a>
-
-    <a href="/appointments" class="card-link">
-
-        <div class="card-box patient-card">
-
-            <h2>📋 View Appointments</h2>
-
-            <p>Display All Appointments</p>
-
-        </div>
-
-    </a>
-
-    <a href="/updateappointment" class="card-link">
-
-        <div class="card-box medicine-card">
-
-            <h2>✏ Update Status</h2>
-
-            <p>Update Appointment Status</p>
-
-        </div>
-
-    </a>
+<div class="card">
+<h3>Update Appointment</h3>
+<a href="/updateappointment">Open</a>
+</div>
 
 </div>
 
-</body>
-</html>
+{% endblock %}

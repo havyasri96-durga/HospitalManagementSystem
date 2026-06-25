@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Doctor Dashboard
+{% endblock %}
+
+{% block content %}
+
+<div class="page-title">
+
+    <h1>🩺 Doctor Dashboard</h1>
+
+    <p>
+        Patient Consultation & Prescription Management
+    </p>
+
+</div>
+
+<!-- Statistics Cards -->
+
+<div class="grid">
+
+    <div class="card">
+        <h2>{{ total_appointments }}</h2>
+        <p>Appointments</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ total_patients }}</h2>
+        <p>Patients</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ total_prescriptions }}</h2>
+        <p>Prescriptions</p>
+    </div>
+
+</div>
+
+<br><br>
+
+<!-- Doctor Services -->
+
+<div class="page-title">
+
+    <h1>Doctor Services</h1>
+
+    <p>
+        Manage Patients and Prescriptions
+    </p>
+
+</div>
+
+<div class="grid">
+
+    <div class="card">
+
+        <h3>📅 My Appointments</h3>
+
+        <p>
+            View today's appointments
+        </p>
+
+        <a href="/appointments">
+            Open
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <h3>👨‍⚕️ Patients</h3>
+
+        <p>
+            View patient records
+        </p>
+
+        <a href="/patients">
+            Open
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💊 Generate Prescription</h3>
+
+        <p>
+            Create new prescription
+        </p>
+
+        <a href="/prescription">
+            Open
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📋 Prescription History</h3>
+
+        <p>
+            View all prescriptions
+        </p>
+
+        <a href="/prescriptions">
+            Open
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

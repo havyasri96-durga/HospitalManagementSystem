@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Reception Dashboard
+{% endblock %}
+
+{% block content %}
+
+<div class="page-title">
+
+<h1>🏥 Reception Dashboard</h1>
+
+<p>Patient Registration, Appointments and Billing</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>➕ Register Patient</h3>
+
+<p>Create a new patient record</p>
+
+<a href="/addpatient">
+Open
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📅 Book Appointment</h3>
+
+<p>Schedule patient appointments</p>
+
+<a href="/bookappointment">
+Open
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>💳 Generate Bill</h3>
+
+<p>Create patient bills</p>
+
+<a href="/addbill">
+Open
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>👨‍⚕️ View Doctors</h3>
+
+<p>Available doctors list</p>
+
+<a href="/doctors">
+Open
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🧑 View Patients</h3>
+
+<p>Patient records</p>
+
+<a href="/patients">
+Open
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📋 View Appointments</h3>
+
+<p>Check booked appointments</p>
+
+<a href="/appointments">
+Open
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🧾 View Bills</h3>
+
+<p>Billing history</p>
+
+<a href="/bills">
+Open
+</a>
+
+</div>
+
+</div>
+
+{% endblock %}
