@@ -13,6 +13,7 @@ db = mysql.connector.connect(
     port="15623"
 )
 
+
 # ---------------- HOME ----------------
 @app.route("/")
 def home():
