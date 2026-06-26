@@ -105,6 +105,8 @@ ORM Used: SQLAlchemy (Flask)
 --------------------------------------
 👨‍⚕️ 1. USERS TABLE (Login & Role Management):
 
+create database hospital_db;
+use hospital_db;
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(100) UNIQUE NOT NULL,

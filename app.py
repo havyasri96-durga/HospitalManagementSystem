@@ -6,10 +6,11 @@ print("App Started")
 app = Flask(__name__)
 
 db = mysql.connector.connect(
-    host="localhost",
+    host="mainline.proxy.rlwy.net",
     user="root",
-    password="admin",
-    database="hospitaldb"
+    password="DZCXkmuJugSjSkAWHqNEKMtUluGswHik",
+    database="hospital_db",
+    port="15623"
 )
 
 # ---------------- HOME ----------------
